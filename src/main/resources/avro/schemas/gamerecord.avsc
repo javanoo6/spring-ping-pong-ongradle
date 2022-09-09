@@ -1,0 +1,82 @@
+{
+  "name": "GameRecord",
+  "type": "record",
+  "namespace": "com.acme.avro",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "name": "id",
+        "type": "record",
+        "fields": [
+          {
+            "name": "timestamp",
+            "type": "int"
+          },
+          {
+            "name": "date",
+            "type": "long"
+          }
+        ]
+      }
+    },
+    {
+      "name": "firstParticipant",
+      "type": {
+        "name": "firstParticipant",
+        "type": "record",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "score",
+            "type": "int"
+          }
+        ]
+      }
+    },
+    {
+      "name": "secondParticipant",
+      "type": {
+        "name": "secondParticipant",
+        "type": "record",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "score",
+            "type": "int"
+          }
+        ]
+      }
+    },
+    {
+      "name": "theWinner",
+      "type": {
+        "name": "theWinner",
+        "type": "record",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "score",
+            "type": "int"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createdDate",
+      "type": {
+        "type": "array",
+        "items": "int"
+      }
+    }
+  ]
+}
